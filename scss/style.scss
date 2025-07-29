@@ -14,7 +14,6 @@ $breakpoints: (
 body {
   font-family: "Noto sans JP", sans-serif;
   position: relative;
-  outline: 1px solid red;
 }
 
 /*---------------------
@@ -135,7 +134,7 @@ body {
 
 .background-design-exhibitors {
   width: 98%;
-  height: 473px;
+  height: 461px;
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -438,7 +437,7 @@ body {
 
 .event {
   padding-top: 84px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 
   @include mq(sp) {
     padding-top: 33px;
@@ -529,7 +528,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   line-height: 38px;
-  margin-top: 4px;
+  margin-top: 5px;
   margin-left: 19px;
   text-align: left;
 
@@ -544,6 +543,13 @@ body {
 .event__detail-venue {
   @include mq(sp) {
     display: none;
+  }
+}
+
+.event__detail-sp {
+  display: none;
+  @include mq(sp) {
+    display: block;
   }
 }
 
@@ -572,8 +578,13 @@ body {
 }
 
 .event__detail-venue--sp {
-  margin-bottom: 8px;
+  display: none;
+  @include mq(sp) {
+    display: block;
+    margin-bottom: 8px;
+  }
 }
+
 .event__detail-people--sp {
   display: none;
   @include mq(sp) {
@@ -620,7 +631,8 @@ body {
 }
 
 .event__map {
-  margin-left: 7px;
+  margin-left: 14px;
+  margin-top: 5px;
   @include mq(sp) {
     margin-top: 22px;
     margin-left: 0;
@@ -779,7 +791,7 @@ body {
 ---------------*/
 .pick-up {
   padding-top: 50px;
-  padding-bottom: 63px;
+  padding-bottom: 66px;
   border-left: 50px solid #fdd35c;
   border-right: 50px solid #fdd35c;
   box-sizing: border-box;
@@ -830,7 +842,7 @@ body {
 }
 
 .company--OPLAN {
-  margin-top: 34px;
+  margin-top: 57px;
   margin-left: 79px;
   width: 110px;
   @include mq(sp) {
@@ -839,7 +851,7 @@ body {
   }
 }
 .company-info--OPLAN {
-  margin-top: 37px;
+  margin-top: 34px;
   padding-left: 111px;
 
   @include mq(sp) {
@@ -852,7 +864,7 @@ body {
   }
 }
 .company--PEBANK {
-  margin-top: 30px;
+  margin-top: 53px;
   margin-left: 9px;
 
   @include mq(sp) {
@@ -861,7 +873,7 @@ body {
   }
 }
 .company-info--PEBANK {
-  margin-top: 25px;
+  margin-top: 48px;
   margin-left: 39px;
   @include mq(sp) {
     width: 100%;
@@ -941,8 +953,7 @@ body {
 //About Exhibitors
 --------------------*/
 .about-exhibitors {
-  padding-top: 91px;
-  padding-top: 27px;
+  padding-top: 22px;
   position: relative;
 }
 
@@ -1021,7 +1032,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 60px;
-  gap: 24px 32px;
+  gap: 24px 30px;
   padding-bottom: 185px;
 
   @include mq(sp) {
@@ -1056,7 +1067,15 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 10px;
+
+    &:nth-child(n + 4) {
+      display: none;
+    }
   }
+}
+
+.time-schedule__card.is-open {
+  display: flex;
 }
 
 .time-schedule__card-time {
@@ -1172,7 +1191,7 @@ body {
   padding-left: 5px;
 
   .time-schedule__card-time {
-    left: -11px;
+    left: -7px;
     @include mq(sp) {
       left: -7px;
     }
@@ -1199,7 +1218,8 @@ body {
   p {
     width: calc(300px - 15px - 15px);
     text-align: left;
-    padding-top: 24px;
+    padding-top: 26px;
+    padding-left: 8px;
     line-height: 1.25;
 
     @include mq(sp) {
@@ -1235,10 +1255,10 @@ body {
   }
 
   p {
-    width: calc(300px - 15px - 15px);
+    width: calc(300px - 10px - 10px);
     text-align: left;
     padding-top: 13px;
-    padding-left: 12px;
+    padding-left: 17px;
     line-height: 1.25;
 
     @include mq(sp) {
@@ -1299,9 +1319,9 @@ body {
 
   img {
     padding-top: 17px;
-    padding-right: 23px;
+    padding-right: 16px;
     height: 154px;
-    width: 150px;
+    width: 146px;
 
     @include mq(sp) {
       width: 85px;
@@ -1314,8 +1334,8 @@ body {
   p {
     width: calc(300px - 15px - 10px);
     text-align: left;
-    padding-top: 24px;
-    padding-left: 2px;
+    padding-top: 23px;
+    padding-left: 8px;
     line-height: 1.25;
 
     @include mq(sp) {
@@ -1334,11 +1354,11 @@ body {
 
   .time-schedule__card-img {
     img[src="./img/card-7.png"] {
-      width: 280px;
-      height: 170px;
+      width: 297px;
+      height: 165px;
       object-fit: contain;
-      padding-top: 17px;
-      padding-right: 0;
+      margin-top: 13px;
+      padding-right: 8px;
 
       @include mq(sp) {
         margin-right: 8px;
@@ -1356,8 +1376,9 @@ body {
   p {
     width: calc(300px - 15px - 10px);
     text-align: left;
-    padding-top: 10px;
+    padding-top: 0;
     padding-left: 16px;
+    padding-bottom: 5px;
     line-height: 1.25;
 
     @include mq(sp) {
@@ -1419,11 +1440,11 @@ body {
 
   img[src="./img//card-9.png"]
   {
-    width: 264px;
+    width: 259px;
     height: 169px;
     object-fit: contain;
-    padding-top: 22px;
-    padding-right: 19px;
+    padding-top: 18px;
+    padding-right: 11px;
 
     @include mq(sp) {
       width: 185px;
@@ -1438,10 +1459,10 @@ body {
   }
 
   p {
-    width: calc(300px - 15px - 15px);
+    width: calc(300px - 5px - 5px);
     text-align: left;
     padding-top: 10px;
-    padding-left: 7px;
+    padding-left: 16px;
     line-height: 1.25;
 
     @include mq(sp) {
@@ -1550,10 +1571,10 @@ body {
 
   img[src="./img/card-12.png"] {
     width: 250px;
-    height: 147px;
+    height: 151px;
     object-fit: contain;
-    margin-top: 33px;
-    padding-right: 5px;
+    margin-top: 30px;
+    margin-right: 2px;
 
     @include mq(sp) {
       width: 175px;
@@ -1671,7 +1692,7 @@ body {
 .footer {
   background: #333;
   padding-top: 67px;
-  padding-bottom: 39px;
+  padding-bottom: 35px;
 
   @include mq(sp) {
     padding-top: 0;
@@ -1715,7 +1736,29 @@ body {
 .footer__small-wrapper {
   margin-top: 25px;
   text-align: center;
-  position: relative;
+}
+
+.footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer__company,
+.footer__privacy {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.footer__company {
+  margin-top: 11px;
+}
+
+.footer__privacy {
+  margin-top: 17px;
 }
 
 .footer__logo {
@@ -1724,22 +1767,13 @@ body {
   font-weight: 500;
   line-height: 20px;
   text-align: center;
-  margin-right: 82px;
+  width: 222px;
+  margin-right: 20px;
 
   @include mq(sp) {
     font-size: 9.117px;
     line-height: 13.024px;
     margin-right: 0;
-  }
-}
-
-small {
-  img {
-    width: 219px;
-
-    @include mq(sp) {
-      width: 150px;
-    }
   }
 }
 
@@ -1838,11 +1872,6 @@ small {
     font-style: italic;
     font-weight: 400;
     line-height: 1;
-  }
-}
-.card-open__contents {
-  @include mq(sp) {
-    display: none;
   }
 }
 

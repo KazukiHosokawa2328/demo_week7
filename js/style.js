@@ -1,6 +1,5 @@
 $(function () {
-  $(".card-open").click(function () {
-    $(this).next().slideToggle(300);
-    $(this).toggleClass("not-active");
+  $(".card-open").on("click", function () {
+    $(".time-schedule__card:nth-child(n+4)").toggleClass("is-open");
   });
 });
