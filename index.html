@@ -82,20 +82,30 @@
           <div>
             <h3 class="event__heading">開催日程</h3>
           </div>
-          <div class="event__detail">
+          <div class="event__detail event__detail-held">
             2023年3月4日（土）開場10:00 閉場18:00（受付開始9:30-）
+          </div>
+          <div class="event__detail event__detail-sp">
+            2023年3月4日（土）10:00〜18:00 （受付開始9:30-）
           </div>
         </div>
         <div class="event__info">
           <div>
-            <h3 class="event__heading">会場</h3>
+            <h3 class="event__heading event__heading-venue">会場</h3>
           </div>
-          <div class="event__detail">東京国際フォーラム ホールE2</div>
+          <div class="event__detail event__detail-venue">
+            東京国際フォーラム ホールE2
+          </div>
+          <div class="event__detail event__detail-venue--sp">
+            東京国際ホール
+          </div>
         </div>
         <div class="event__info">
-          <div><h3 class="event__heading">イベント内容</h3></div>
+          <div>
+            <h3 class="event__heading event__heading-contents">イベント内容</h3>
+          </div>
 
-          <div class="event__detail">
+          <div class="event__detail event__detail-contents">
             企業ブース出展：60ブース<br />
             ビジネス系セミナー：12枠
           </div>
@@ -106,15 +116,16 @@
           </div>
 
           <div class="event__detail">
-            経営者 / フリーランス / 独立志望の会社員
+            経営者 / フリーランス /<br class="event__detail-people--sp" />
+            独立志望の会社員
           </div>
         </div>
         <div class="event__info event__detail-map event__heading--last">
           <div>
-            <h3 class="event__heading">アクセス</h3>
+            <h3 class="event__heading event__heading-access">アクセス</h3>
           </div>
 
-          <div class="event__detail">
+          <div class="event__detail event__detail-access">
             【最寄駅】
             <div class="event__access">
               <div class="event__access-JR">
@@ -220,7 +231,7 @@
     </section>
 
     <section class="pick-up">
-      <div class="section__inner">
+      <div class="section__inner pick-up__inner">
         <h2 class="section__title">
           <span class="section__title-en section__title-en--orange"
             >Pick Up</span
@@ -229,16 +240,16 @@
         </h2>
         <div class="pick-up__info">
           <div class="pick-up__company company--OPLAN">
-            <img
-              src="./img/pickup-logo1.png"
-              alt=""
-              width="110.25px"
-              height="30px"
-            />
+            <a href="https://oplan.co.jp/" target="_blank">
+              <img
+                src="./img/pickup-logo1.png"
+                alt=""
+                width="110.25px"
+                height="30px"
+            /></a>
           </div>
           <p class="pick-up__company-info company-info--OPLAN">
             オープラン株式会社は「ITサービス」を軸に「人」と「グローバル」に向き合い日本を代表する企業になるべく2015年に産声をあげたベンチャー企業です。<br />
-            https://oplan.co.jp/
           </p>
         </div>
         <div class="pick-up__info">
@@ -277,7 +288,9 @@
             />
           </div>
           <p class="pick-up__company-info company-info--creava">
-            月額制システム開発チームレンタルSucSak(サクサク)を運営している東京新宿のシステム開発会社です。<br />
+            月額制システム開発チームレンタル<a href="https://sucsak.com/"
+              >SucSak(サクサク)</a
+            >を運営している東京新宿のシステム開発会社です。<br />
             <a href="https://sucsak.com/"
               ><img src="./img/Pickuop-logo-creava.png" alt=""
             /></a>
@@ -335,7 +348,7 @@
       </div>
     </section>
     <section class="time-schedule">
-      <div class="section__inner">
+      <div class="section__inner time-schedule__inner">
         <h2 class="section__title">
           <span class="section__title-en section__title-en--dark"
             >Time Schedule</span
@@ -376,120 +389,150 @@
               営業出身のフリーランスの生存戦略
             </p>
           </div>
-          <div class="time-schedule__card card--4">
-            <div class="time-schedule__card-time">
-              <span>12:20〜</span>
+          <button class="card-open">Read more</button>
+          <div class="card-open__contents">
+            <div class="time-schedule__card card--4">
+              <div class="time-schedule__card-time">
+                <span>12:20〜</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img/card-4.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text">
+                無数のフリーランスに発注してわかった優秀な人の特徴
+              </p>
             </div>
-            <div class="time-schedule__card-img">
-              <img src="./img/card-4.png" alt="" width="126px" height="126px" />
+            <div class="time-schedule__card card--5">
+              <div class="time-schedule__card-time">
+                <span>13:00〜</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img/card-5.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text">
+                現役上場企業社長が語る 最新WEBマーケティング論
+              </p>
             </div>
-            <p class="time-schedule__card-text">
-              無数のフリーランスに発注してわかった優秀な人の特徴
-            </p>
-          </div>
-          <div class="time-schedule__card card--5">
-            <div class="time-schedule__card-time">
-              <span>13:00〜</span>
+            <div class="time-schedule__card card--6">
+              <div class="time-schedule__card-time">
+                <span>13:40〜</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img/card-6.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text">
+                月収300万円までのロードマップ
+              </p>
             </div>
-            <div class="time-schedule__card-img">
-              <img src="./img/card-5.png" alt="" width="126px" height="126px" />
+            <div class="time-schedule__card card--7">
+              <div class="time-schedule__card-time">
+                <span>14:20〜</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img/card-7.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text">
+                SNSを伸ばした先に見える世界
+              </p>
             </div>
-            <p class="time-schedule__card-text">
-              現役上場企業社長が語る 最新WEBマーケティング論
-            </p>
-          </div>
-          <div class="time-schedule__card card--6">
-            <div class="time-schedule__card-time">
-              <span>13:40〜</span>
+            <div class="time-schedule__card card--8">
+              <div class="time-schedule__card-time">
+                <span>15:00〜</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img/card-8.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text">
+                元サイバーエージェント局長による広告業界の未来予想図
+              </p>
             </div>
-            <div class="time-schedule__card-img">
-              <img src="./img/card-6.png" alt="" width="126px" height="126px" />
+            <div class="time-schedule__card card--9">
+              <div class="time-schedule__card-time">
+                <span>15:40〜</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img//card-9.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text">
+                エンジニアとして独立し、年収3000万円を超える方法
+              </p>
             </div>
-            <p class="time-schedule__card-text">
-              月収300万円までのロードマップ
-            </p>
-          </div>
-          <div class="time-schedule__card card--7">
-            <div class="time-schedule__card-time">
-              <span>14:20〜</span>
+            <div class="time-schedule__card card--10">
+              <div class="time-schedule__card-time">
+                <span>16:20〜</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img/card-10.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text">
+                累計300人以上、起業家を見て感じた成功法則
+              </p>
             </div>
-            <div class="time-schedule__card-img">
-              <img src="./img/card-7.png" alt="" width="126px" height="126px" />
+            <div class="time-schedule__card card--11">
+              <div class="time-schedule__card-time">
+                <span>17:00〜</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img/card-11.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text">
+                フリーランスにおすすめのM＆Aトレンドを紹介
+              </p>
             </div>
-            <p class="time-schedule__card-text">SNSを伸ばした先に見える世界</p>
-          </div>
-          <div class="time-schedule__card card--8">
-            <div class="time-schedule__card-time">
-              <span>15:00〜</span>
+            <div class="time-schedule__card card--12">
+              <div class="time-schedule__card-time">
+                <span> MC</span>
+              </div>
+              <div class="time-schedule__card-img">
+                <img
+                  src="./img/card-12.png"
+                  alt=""
+                  width="126px"
+                  height="126px"
+                />
+              </div>
+              <p class="time-schedule__card-text"></p>
             </div>
-            <div class="time-schedule__card-img">
-              <img src="./img/card-8.png" alt="" width="126px" height="126px" />
-            </div>
-            <p class="time-schedule__card-text">
-              元サイバーエージェント局長による広告業界の未来予想図
-            </p>
-          </div>
-          <div class="time-schedule__card card--9">
-            <div class="time-schedule__card-time">
-              <span>15:40〜</span>
-            </div>
-            <div class="time-schedule__card-img">
-              <img
-                src="./img//card-9.png"
-                alt=""
-                width="126px"
-                height="126px"
-              />
-            </div>
-            <p class="time-schedule__card-text">
-              エンジニアとして独立し、年収3000万円を超える方法
-            </p>
-          </div>
-          <div class="time-schedule__card card--10">
-            <div class="time-schedule__card-time">
-              <span>16:20〜</span>
-            </div>
-            <div class="time-schedule__card-img">
-              <img
-                src="./img/card-10.png"
-                alt=""
-                width="126px"
-                height="126px"
-              />
-            </div>
-            <p class="time-schedule__card-text">
-              累計300人以上、起業家を見て感じた成功法則
-            </p>
-          </div>
-          <div class="time-schedule__card card--11">
-            <div class="time-schedule__card-time">
-              <span>17:00〜</span>
-            </div>
-            <div class="time-schedule__card-img">
-              <img
-                src="./img/card-11.png"
-                alt=""
-                width="126px"
-                height="126px"
-              />
-            </div>
-            <p class="time-schedule__card-text">
-              フリーランスにおすすめのM＆Aトレンドを紹介
-            </p>
-          </div>
-          <div class="time-schedule__card card--12">
-            <div class="time-schedule__card-time">
-              <span> MC</span>
-            </div>
-            <div class="time-schedule__card-img">
-              <img
-                src="./img/card-12.png"
-                alt=""
-                width="126px"
-                height="126px"
-              />
-            </div>
-            <p class="time-schedule__card-text"></p>
           </div>
         </div>
       </div>
@@ -499,7 +542,7 @@
       <div class="background-design-faq1"></div>
       <div class="background-design-faq2"></div>
       <div class="background-design-faq3"></div>
-      <div class="section__inner">
+      <div class="section__inner faq__inner-sp">
         <h2 class="section__title">
           <span
             class="section__title-en section__title-en--orange section-title--faq"
@@ -531,13 +574,24 @@
         </div>
       </div>
       <div class="footer__small-wrapper">
-        <small
-          ><span class="footer__company">運営会社</span
-          ><img src="./img/logo.png" alt="" class="footer__logo" />
-          <span class="footer__privacy">個人情報保護方針</span>
-        </small>
+        <div class="footer__company">運営会社</div>
+        <img src="./img/logo.png" alt="" class="footer__logo" />
+        <div class="footer__privacy">個人情報保護方針</div>
       </div>
     </footer>
+    <button class="window-button">
+      申し込みはこちら<img src="./img/line-brand-icon-1.png" alt="" />
+    </button>
+    <div class="window-button__wrapper">
+      <button class="window-button--sp">
+        事前申し込みはこちら(無料)<img
+          src="./img/line-brand-icon-1.png"
+          alt=""
+        />
+      </button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="./js/style.js"></script>
   </body>
 </html>
