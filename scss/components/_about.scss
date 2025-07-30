@@ -1,0 +1,59 @@
+@use "../components/mixin" as *;
+
+/*---------------------
+//about
+----------------------*/
+
+.about {
+  position: relative;
+  padding-top: 38px;
+
+  @include mq(sp) {
+    padding-top: 29px;
+  }
+}
+
+.about__text {
+  margin-top: 60px;
+  color: #444545;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 45px;
+
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.about__text-sp {
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.about__text-sub {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  color: #444545;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+
+  @include mq(tab) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @include mq(sp) {
+    // margin-top: 28px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 37px;
+    width: 300px;
+    margin: 28px auto 0;
+  }
+}

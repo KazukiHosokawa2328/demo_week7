@@ -1,0 +1,100 @@
+@use "../components/mixin" as *;
+
+body {
+  font-family: "Noto sans JP", sans-serif;
+  position: relative;
+}
+
+/*---------------------
+//section 
+----------------------*/
+
+.section__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+
+  @include mq(sp) {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+.section__title {
+  line-height: 1;
+  span {
+    display: block;
+  }
+}
+
+.section__title-en {
+  font-weight: 700;
+  margin-bottom: 17px;
+  color: #81d7fc;
+  font-family: "Roboto";
+  font-size: 60px;
+  font-style: italic;
+
+  @include mq(sp) {
+    font-size: 26px;
+    margin-bottom: 3px;
+  }
+}
+
+.section__title-en--orange {
+  color: #fdd35c;
+}
+
+.section__title-en--dark {
+  color: #00a8f0;
+}
+
+.section__title-ja {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  span {
+    font-weight: 700;
+    color: #444545;
+    font-size: 18px;
+    margin: 0 14px;
+    white-space: nowrap;
+
+    @include mq(sp) {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  }
+
+  &::before,
+  &::after {
+    // border-top: 1px solid black;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 30px;
+    background: #444545;
+
+    @include mq(sp) {
+      width: 20px;
+      margin-top: 7px;
+    }
+  }
+  &::before {
+    // margin-right: 21px;
+  }
+  &::after {
+    // margin-left: 11px;
+  }
+}
+
+.section__title-ja--white {
+  span {
+    color: #fff;
+  }
+  &::before,
+  &::after {
+    border-top: 1px solid white;
+  }
+}

@@ -1,0 +1,108 @@
+@use "../components/mixin" as *;
+
+/*----------------------
+//background
+-----------------------*/
+
+.background-design {
+  width: 100%;
+  height: 1465px;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(../img/background/background-1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+
+  @include mq(tab) {
+    height: auto;
+  }
+
+  @include mq(sp) {
+    background-image: url(../img/background-sp/sp-1.png);
+    height: 365px;
+  }
+}
+
+.background-design-exhibitors {
+  width: 98%;
+  height: 461px;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(../img/background/background-2.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+
+  @include mq(tab) {
+    height: auto;
+  }
+
+  @include mq(sp) {
+    background-image: url(../img/background-sp/sp-2.png);
+    height: 294px;
+  }
+}
+
+.background-design-faq1 {
+  background-image: url(../img/background/polygon-4.png);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  top: 99px;
+  left: -1341px;
+
+  @include mq(tab) {
+    height: auto;
+  }
+
+  @include mq(sp) {
+    display: none;
+  }
+}
+.background-design-faq2 {
+  background-image: url(../img/background/polygon-5.png);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  top: -256px;
+  left: 1353px;
+
+  @include mq(tab) {
+    height: auto;
+  }
+
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.background-design-faq3 {
+  background-image: url(../img/background/polygon-6.png);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  top: -450px;
+  left: 1042px;
+
+  @include mq(tab) {
+    height: auto;
+  }
+
+  @include mq(sp) {
+    display: none;
+  }
+}

@@ -1,0 +1,187 @@
+@use "../components/mixin" as *;
+
+/*---------------
+//contents
+---------------*/
+.contents {
+  background: #fff6de;
+  padding-top: 80px;
+
+  @include mq(tab) {
+    padding-top: 60px;
+  }
+
+  @include mq(sp) {
+    padding-top: 40px;
+  }
+}
+
+.contents__info {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 90px;
+
+  @include mq(tab) {
+    gap: 35px;
+    margin: 40px 15px 0;
+  }
+
+  @include mq(sp) {
+    display: block;
+    margin-top: 26px;
+    padding-bottom: 52px;
+  }
+}
+
+.contents__card {
+  border-radius: 17px;
+  border: 3px solid #fdd35c;
+  background: #fff;
+  width: 435px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+  @include mq(tab) {
+    min-width: 220px;
+    width: 100%;
+    height: auto;
+  }
+
+  @include mq(sp) {
+    margin: 0 auto;
+    width: 336px;
+    padding-bottom: 17px;
+    &:first-child {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.contents__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 41px;
+  border-radius: 10px 10px 0 0;
+  border: 3px solid #fdd35c;
+  background: #fdd35c;
+  padding-top: 5px;
+  padding-bottom: 3px;
+
+  @include mq(tab) {
+    font-size: 0.9rem;
+    line-height: 30px;
+  }
+
+  @include mq(sp) {
+    font-size: 18.538px;
+    line-height: 24.669px;
+  }
+}
+
+.contents__sub {
+  color: #444545;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 14px;
+  padding-right: 12px;
+
+  @include mq(tab) {
+    font-size: 0.8rem;
+  }
+
+  @include mq(sp) {
+    font-size: 10.814px;
+    line-height: 15.448px;
+  }
+}
+
+.contents__sub--svg {
+  margin-top: -4px;
+  margin-right: 8px;
+
+  @include mq(tab) {
+    width: 190px;
+    height: 26px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include mq(sp) {
+    width: 179px;
+    height: 26px;
+  }
+}
+
+.contents__main {
+  color: #fdd35c;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+
+  @include mq(tab) {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  @include mq(sp) {
+    font-size: 21.628px;
+    margin-bottom: 14px;
+  }
+
+  em {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    position: absolute;
+    top: -14px;
+    left: -9px;
+    font-style: italic;
+
+    @include mq(tab) {
+      font-size: 2.2rem;
+    }
+
+    @include mq(sp) {
+      font-size: 37.076px;
+      top: -14px;
+      left: 2px;
+    }
+  }
+}
+
+.contents__main--booth {
+  padding-left: 50px;
+}
+
+.content__img {
+  width: 340px;
+  height: 180px;
+  display: block;
+  margin: 0 auto;
+
+  @include mq(tab) {
+    min-width: 200px;
+    height: auto;
+  }
+
+  @include mq(sp) {
+    width: 262.621px;
+    height: 139.034px;
+  }
+}
+
+.button--contents {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  @include mq(sp) {
+    display: none;
+  }
+}

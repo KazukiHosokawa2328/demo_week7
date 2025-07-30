@@ -1,0 +1,112 @@
+@use "../components/mixin" as *;
+
+/*-------------------
+//FAQ
+--------------------*/
+.faq {
+  padding-top: 80px;
+  padding-bottom: 108px;
+  position: relative;
+
+  @include mq(sp) {
+    padding-top: 29px;
+    padding-bottom: 50px;
+  }
+}
+
+.faq__inner-sp {
+  @include mq(sp) {
+    max-width: 310px;
+  }
+}
+
+.section-title--faq {
+  padding-top: 18px;
+}
+
+.faq__lists {
+  padding-top: 78px;
+  padding-left: 143px;
+  text-align: left;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @include mq(tab) {
+    padding-top: 50px;
+    margin: 0 10px 0 10px;
+    padding-left: 100px;
+  }
+
+  @include mq(sp) {
+    padding-top: 29px;
+    margin-left: 37px;
+    padding-left: 0;
+    font-size: 16px;
+  }
+}
+
+.faq__question {
+  padding-bottom: 22px;
+  position: relative;
+
+  @include mq(sp) {
+    padding-bottom: 16px;
+  }
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "Q";
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    top: 0;
+    left: -43px;
+    background-color: #00a8f0;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+
+    @include mq(sp) {
+      width: 26.159px;
+      height: 26.159px;
+      left: -36px;
+    }
+  }
+}
+
+.faq__answer {
+  padding-bottom: 49px;
+  position: relative;
+
+  @include mq(sp) {
+    padding-bottom: 33px;
+  }
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "A";
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    top: 0;
+    left: -43px;
+    background-color: #fdd35c;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+
+    @include mq(sp) {
+      width: 26.159px;
+      height: 26.159px;
+      left: -36px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: #00a8f0;
+    text-decoration-thickness: 1px;
+  }
+}

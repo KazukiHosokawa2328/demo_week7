@@ -1,0 +1,170 @@
+@use "../components/mixin" as *;
+
+/*---------------
+//Pick Up
+---------------*/
+.pick-up {
+  padding-top: 50px;
+  padding-bottom: 66px;
+  border-left: 50px solid #fdd35c;
+  border-right: 50px solid #fdd35c;
+  box-sizing: border-box;
+
+  @include mq(tab) {
+    border-left: 25px solid #fdd35c;
+    border-right: 25px solid #fdd35c;
+  }
+
+  @include mq(sp) {
+    border-left: 10px solid #fdd35c;
+    border-right: 10px solid #fdd35c;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+.pick-up__inner {
+  @include mq(sp) {
+    max-width: 340px;
+  }
+}
+
+.pick-up__info {
+  display: flex;
+  align-items: center;
+
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+.pick-up__company {
+  width: 251px;
+
+  @include mq(sp) {
+    margin: 0 auto 10px;
+    width: 100%;
+  }
+}
+
+.pick-up__company-info {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  flex: 1;
+
+  @include mq(sp) {
+    font-size: 14px;
+  }
+}
+
+.company--OPLAN {
+  margin-top: 57px;
+  margin-left: 79px;
+  width: 110px;
+  @include mq(sp) {
+    margin: 33px auto 0;
+    width: 73.5px;
+  }
+}
+.company-info--OPLAN {
+  margin-top: 34px;
+  padding-left: 111px;
+
+  @include mq(sp) {
+    width: 100%;
+    margin: 14px auto 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+}
+.company--PEBANK {
+  margin-top: 53px;
+  margin-left: 9px;
+
+  @include mq(sp) {
+    margin: 23px auto 0;
+    width: 154px;
+  }
+}
+.company-info--PEBANK {
+  margin-top: 48px;
+  margin-left: 39px;
+  @include mq(sp) {
+    width: 100%;
+    margin: 12px auto 0;
+    text-align: center;
+  }
+}
+.company--BOC {
+  margin-top: 25px;
+  width: 267px;
+  @include mq(sp) {
+    margin: 53px auto 0;
+    width: 177px;
+  }
+}
+.company-info--BOC {
+  margin-top: 20px;
+  margin-left: 33px;
+  @include mq(sp) {
+    width: 100%;
+    margin: 12px auto 0;
+  }
+}
+.company--creava {
+  margin-top: 17px;
+  margin-left: 8px;
+  @include mq(sp) {
+    margin: 16px auto 0;
+    width: 124px;
+  }
+}
+.company-info--creava {
+  margin-top: 20px;
+  margin-left: 39px;
+  @include mq(sp) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 95px;
+    height: 21px;
+
+    @include mq(sp) {
+      display: none;
+      // width: 77px;
+      // height: 17px;
+    }
+  }
+
+  a {
+    @include mq(sp) {
+      text-decoration: underline;
+      text-decoration-color: #ffebe2;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+.company--quartet {
+  margin-top: 40px;
+  margin-left: 16px;
+  @include mq(sp) {
+    margin: 25px auto 0;
+    width: 155px;
+  }
+}
+.company-info--quartet {
+  margin-top: 31px;
+  margin-left: 31px;
+  @include mq(sp) {
+    width: 100%;
+    margin: 10px auto 0;
+    text-align: center;
+  }
+}

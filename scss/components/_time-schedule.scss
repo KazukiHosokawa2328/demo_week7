@@ -1,0 +1,782 @@
+@use "../components/mixin" as *;
+
+/*-------------------
+//Time Schedule
+--------------------*/
+.time-schedule {
+  background-image: url(../img/time-schedule-background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding-top: 92px;
+
+  @include mq(sp) {
+    padding-top: 41px;
+    padding-bottom: 10px;
+  }
+}
+
+.time-schedule__inner {
+  @include mq(sp) {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+.time-schedule__lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 60px;
+  gap: 24px 30px;
+  padding-bottom: 185px;
+
+  @include mq(tab) {
+    padding-top: 30px;
+    gap: 14px 8px;
+    padding-bottom: 40px;
+    margin: 0 12px 0;
+    place-items: center;
+  }
+
+  @include mq(sp) {
+    display: block;
+    margin-left: 3px;
+    padding-top: 34px;
+    padding-bottom: 0;
+  }
+}
+
+.time-schedule__card {
+  position: relative;
+  width: 300px;
+  height: 254px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: rgba(241, 251, 255, 0.6);
+
+  &:last-child {
+    height: 192px;
+
+    @include mq(sp) {
+      height: 103px;
+    }
+  }
+
+  @include mq(tab) {
+    max-width: 250px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mq(sp) {
+    max-width: 354px;
+    width: 100%;
+    height: 103px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+}
+
+.time-schedule__card-text {
+  @include mq(tab) {
+    padding: 3px;
+  }
+}
+
+.time-schedule__card.is-open {
+  display: flex;
+}
+
+.time-schedule__card-time {
+  position: absolute;
+  top: 7px;
+  left: -4px;
+  background-image: url(../img/time-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 88px;
+  height: 31px;
+
+  @include mq(tab) {
+    width: 66px;
+    height: 25px;
+  }
+
+  @include mq(sp) {
+    top: 5px;
+    left: -7px;
+    background-repeat: repeat-y;
+  }
+
+  span {
+    color: #444545;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.28px;
+
+    @include mq(tab) {
+      font-size: 0.85rem;
+    }
+
+    @include mq(sp) {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.12px;
+    }
+  }
+}
+
+.time-schedule__card-text {
+  padding-top: 38px;
+  color: #444545;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+
+  @include mq(tab) {
+    font-size: 1rem;
+  }
+
+  @include mq(sp) {
+    font-size: 16px;
+    letter-spacing: 1.28px;
+  }
+}
+
+.card--1 {
+  span {
+    padding-right: 7px;
+  }
+
+  img {
+    padding-top: 18px;
+    padding-right: 4px;
+    height: 150px;
+    width: 136px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 83px;
+      height: 88px;
+      padding: 0;
+      margin-right: 16px;
+    }
+  }
+
+  p {
+    padding-right: 47px;
+    padding-top: 39px;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      padding-right: 69px;
+      padding-top: 15px;
+    }
+  }
+}
+
+.card--2 {
+  span {
+    padding-right: 7px;
+  }
+
+  img {
+    padding-top: 21px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 88px;
+      height: 88px;
+      padding: 0;
+      margin-right: 24px;
+    }
+  }
+
+  p {
+    width: calc(300px - 15px - 15px);
+    text-align: left;
+    padding-left: 12px;
+    padding-top: 12px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: 1.28px;
+      padding-top: 20px;
+    }
+  }
+}
+
+.card--3 {
+  padding-left: 5px;
+
+  .time-schedule__card-time {
+    left: -7px;
+    @include mq(sp) {
+      left: -7px;
+    }
+  }
+  span {
+    padding-right: 11px;
+  }
+
+  img {
+    padding-top: 18px;
+    padding-right: 17px;
+    height: 150px;
+    width: 147px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 86px;
+      height: 89px;
+      padding: 0;
+      margin-right: 16px;
+      margin-top: 4px;
+    }
+  }
+
+  p {
+    width: calc(300px - 15px - 15px);
+    text-align: left;
+    padding-top: 26px;
+    padding-left: 8px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      width: 200px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: 1.28px;
+      padding-top: 29px;
+      margin-right: 38px;
+    }
+  }
+}
+
+.card--4 {
+  span {
+    padding-right: 4px;
+  }
+
+  img {
+    padding-top: 18px;
+    padding-right: 4px;
+    height: 150px;
+    width: 136px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 84px;
+      height: 87px;
+      padding: 0;
+      margin-right: 21px;
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    width: calc(300px - 10px - 10px);
+    text-align: left;
+    padding-top: 13px;
+    padding-left: 17px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      width: 260px;
+      padding-top: 27px;
+      padding-left: 12px;
+    }
+  }
+}
+
+.card--5 {
+  padding-left: 5px;
+
+  span {
+    padding-right: 8px;
+  }
+
+  img {
+    padding-top: 18px;
+    padding-right: 8px;
+    height: 150px;
+    width: 136px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 86px;
+      height: 88px;
+      padding: 0;
+      margin-right: 31px;
+    }
+  }
+
+  p {
+    width: calc(300px - 15px - 10px);
+    text-align: left;
+    padding-top: 26px;
+    padding-left: 12px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      padding-left: 6px;
+    }
+  }
+}
+
+.card--6 {
+  padding-left: 5px;
+
+  .time-schedule__card-time {
+    left: -11px;
+    @include mq(sp) {
+      left: -6px;
+    }
+  }
+
+  span {
+    padding-right: 8px;
+  }
+
+  img {
+    padding-top: 17px;
+    padding-right: 16px;
+    height: 154px;
+    width: 146px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 85px;
+      height: 89px;
+      padding: 0;
+      margin-right: 29px;
+    }
+  }
+
+  p {
+    width: calc(300px - 15px - 10px);
+    text-align: left;
+    padding-top: 23px;
+    padding-left: 8px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      padding-left: 9px;
+    }
+  }
+}
+
+.card--7 {
+  .time-schedule__card-time {
+    left: -2px;
+    @include mq(sp) {
+      left: -7px;
+    }
+  }
+
+  .time-schedule__card-img {
+    img[src="./img/card-7.png"] {
+      width: 297px;
+      height: 165px;
+      object-fit: contain;
+      margin-top: 13px;
+      padding-right: 8px;
+
+      @include mq(tab) {
+        width: 220px;
+        height: 120px;
+        min-width: 60px;
+        min-height: 60px;
+        padding: 5px;
+      }
+
+      @include mq(sp) {
+        margin-right: 8px;
+        padding: 0;
+        width: 197px;
+        height: 103px;
+      }
+    }
+  }
+
+  span {
+    padding-right: 8px;
+  }
+
+  p {
+    width: calc(300px - 15px - 10px);
+    text-align: left;
+    padding-top: 0;
+    padding-left: 16px;
+    padding-bottom: 5px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      width: 130px;
+      padding: 23px 0px 0 12px;
+      flex: 1;
+    }
+  }
+}
+
+.card--8 {
+  .time-schedule__card-time {
+    left: -5px;
+    @include mq(sp) {
+      left: -7px;
+    }
+  }
+
+  span {
+    padding-right: 8px;
+  }
+
+  img {
+    padding-top: 22px;
+    padding-right: 9px;
+    height: 156px;
+    width: 137px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 83px;
+      height: 89px;
+      padding: 0;
+      margin-right: 26px;
+    }
+  }
+
+  p {
+    width: calc(300px - 15px - 10px);
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 16px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      padding-top: 22px;
+      padding-left: 12px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.card--9 {
+  .time-schedule__card-time {
+    left: -12px;
+    @include mq(sp) {
+      left: -7px;
+    }
+  }
+
+  img[src="./img//card-9.png"]
+  {
+    width: 259px;
+    height: 169px;
+    object-fit: contain;
+    padding-top: 18px;
+    padding-right: 11px;
+
+    @include mq(tab) {
+      width: 190px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 185px;
+      height: 100px;
+      padding-top: 0px;
+      padding-right: 8px;
+    }
+  }
+
+  span {
+    padding-right: 8px;
+  }
+
+  p {
+    width: calc(300px - 5px - 5px);
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 16px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      width: 200px;
+      padding-top: 25px;
+      padding-left: 13px;
+    }
+  }
+}
+
+.card--10 {
+  margin-left: 4px;
+
+  @include mq(sp) {
+    margin-left: 0;
+  }
+
+  .time-schedule__card-time {
+    left: -1px;
+
+    @include mq(sp) {
+      left: -7px;
+    }
+  }
+
+  span {
+    padding-right: 6px;
+  }
+
+  img {
+    padding-top: 22px;
+    height: 156px;
+    width: 131px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 83px;
+      height: 89px;
+      padding: 0;
+      margin-right: 17px;
+    }
+  }
+
+  p {
+    width: 290px;
+    text-align: left;
+    padding-top: 23px;
+    padding-left: 23px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      width: 220px;
+      padding-top: 18px;
+      padding-left: 0px;
+      margin-right: 21px;
+    }
+  }
+}
+
+.card--11 {
+  // margin-left: 4px;
+
+  .time-schedule__card-time {
+    left: -6px;
+  }
+
+  span {
+    padding-right: 6px;
+  }
+
+  img {
+    padding-top: 22px;
+    padding-right: 5px;
+    height: 156px;
+    width: 133px;
+
+    @include mq(tab) {
+      width: 120px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 83px;
+      height: 89px;
+      padding: 0;
+      margin-right: 17px;
+    }
+  }
+
+  p {
+    width: 290px;
+    text-align: left;
+    padding-top: 23px;
+    padding-left: 23px;
+    line-height: 1.25;
+
+    @include mq(tab) {
+      padding: 3px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    @include mq(sp) {
+      width: 220px;
+      padding-top: 18px;
+      padding-left: 0px;
+      margin-right: 21px;
+    }
+  }
+}
+
+.card--12 {
+  // margin-left: 4px;
+
+  .time-schedule__card-time {
+    left: -6px;
+  }
+
+  img[src="./img/card-12.png"] {
+    width: 250px;
+    height: 151px;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-right: 2px;
+
+    @include mq(tab) {
+      width: 200px;
+      height: 120px;
+      min-width: 60px;
+      min-height: 60px;
+      padding: 5px;
+    }
+
+    @include mq(sp) {
+      width: 175px;
+      height: 100px;
+      margin: 0 85px 0 0;
+    }
+  }
+
+  span {
+    padding-right: 6px;
+  }
+}

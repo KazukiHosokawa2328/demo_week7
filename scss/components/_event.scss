@@ -1,0 +1,241 @@
+@use "../components/mixin" as *;
+
+/*---------------
+//event
+---------------*/
+
+.event {
+  padding-top: 84px;
+  padding-bottom: 12px;
+
+  @include mq(tab) {
+    padding-top: 50px;
+  }
+
+  @include mq(sp) {
+    padding-top: 33px;
+    padding-bottom: 29px;
+  }
+}
+
+.event__inner-sp {
+  @include mq(sp) {
+    width: 350px;
+  }
+}
+
+.event__title-ja {
+  padding-top: 2px;
+  padding-bottom: 62px;
+
+  @include mq(sp) {
+    padding-bottom: 27px;
+  }
+
+  span {
+    margin-left: 18px;
+    margin-right: 38px;
+
+    @include mq(sp) {
+      margin-left: 24px;
+      margin-right: 26px;
+    }
+  }
+}
+
+.event__info {
+  display: flex;
+  border-bottom: 1px dotted #c4c4c4;
+  padding-bottom: 28px;
+  margin-bottom: 42px;
+
+  @include mq(tab) {
+    padding-bottom: 18px;
+    margin-bottom: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  @include mq(sp) {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+  }
+}
+
+.event__heading {
+  color: #fdd35c;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+  border-radius: 27.5px;
+  border: 2px solid #fdd35c;
+  display: inline-block;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  min-width: 170px;
+  white-space: nowrap;
+
+  @include mq(tab) {
+    font-size: 1.2rem;
+    line-height: 35px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    min-width: 140px;
+  }
+
+  @include mq(sp) {
+    font-size: 15px;
+    line-height: 24.88px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    min-width: 108px;
+  }
+}
+
+.event__heading--last {
+  border: none;
+}
+
+.event__heading-venue,
+.event__heading-contents {
+  @include mq(sp) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.event__heading-access {
+  @include mq(sp) {
+    margin-right: 64px;
+  }
+}
+
+.event__detail {
+  color: #444545;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-top: 5px;
+  margin-left: 19px;
+  text-align: left;
+
+  @include mq(tab) {
+    font-size: 1.2rem;
+  }
+
+  @include mq(sp) {
+    font-size: 14px;
+    line-height: 31.175px;
+    margin-top: 0;
+  }
+}
+
+.event__detail-held,
+.event__detail-venue {
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.event__detail-sp {
+  display: none;
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+.event__detail-contents {
+  @include mq(sp) {
+    font-size: 14px;
+    line-height: 23.555px;
+    margin-bottom: 3px;
+  }
+}
+
+.event__detail-access {
+  @include mq(sp) {
+    margin-left: 3px;
+    margin-right: 10px;
+    grid-column: 2 / span 4;
+    grid-row: 1;
+  }
+}
+
+.event__detail-map {
+  @include mq(sp) {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+  }
+}
+
+.event__detail-venue--sp {
+  display: none;
+  @include mq(sp) {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+.event__detail-people--sp {
+  display: none;
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+.event__access {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 14px;
+}
+
+.event__access-JR {
+  position: relative;
+  margin-bottom: 5px;
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 5px;
+    left: -15px;
+    background-color: #fdd35c;
+  }
+}
+
+.event__access-subway {
+  position: relative;
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 5px;
+    left: -15px;
+    background-color: #fdd35c;
+  }
+}
+
+.event__map {
+  margin-left: 14px;
+  margin-top: 5px;
+
+  @include mq(tab) {
+    min-width: 150px;
+    width: 100%;
+  }
+  @include mq(sp) {
+    margin-top: 22px;
+    margin-left: 0;
+    width: 100%;
+    height: 200px;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+}
