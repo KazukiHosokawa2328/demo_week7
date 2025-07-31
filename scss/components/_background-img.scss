@@ -27,7 +27,7 @@
 }
 
 .background-design-exhibitors {
-  width: 1391.724px;
+  width: 100%;
   height: 435.011px;
   position: absolute;
   inset: 0;
@@ -39,12 +39,14 @@
   pointer-events: none;
 
   @include mq(tab) {
+    width: 100%;
     height: auto;
   }
 
   @include mq(sp) {
     background-image: url(../img/background-sp/sp-2.png);
-    height: 294px;
+    height: 357px;
+    margin-top: 40px;
   }
 }
 
