@@ -154,6 +154,12 @@
 }
 
 .event__detail-access {
+  @include mq(mid) {
+    margin-left: 39px;
+    margin-right: 10px;
+    grid-column: 2 / span 4;
+    grid-row: 1;
+  }
   @include mq(sp) {
     margin-left: 3px;
     margin-right: 10px;
@@ -163,6 +169,11 @@
 }
 
 .event__detail-map {
+  @include mq(mid) {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+  }
+
   @include mq(sp) {
     display: grid;
     grid-template-columns: 110px 1fr;
@@ -230,6 +241,18 @@
     min-width: 150px;
     width: 100%;
   }
+
+  @include mq(mid) {
+    margin-top: 22px;
+    margin-left: 0;
+    width: 80%;
+    height: 200px;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include mq(sp) {
     margin-top: 22px;
     margin-left: 0;

@@ -7,6 +7,7 @@
   padding-top: 80px;
   padding-bottom: 108px;
   position: relative;
+  overflow: visible;
 
   @include mq(sp) {
     padding-top: 29px;

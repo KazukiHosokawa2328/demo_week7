@@ -234,13 +234,15 @@ body {
 .background-design-faq1 {
   background-image: url(../img/background/polygon-4.png);
   position: absolute;
-  inset: 0;
-  z-index: -1;
+  z-index: 1;
   background-position: center center;
   background-repeat: no-repeat;
   pointer-events: none;
-  top: 99px;
-  left: -1367px;
+  top: 350px;
+  left: -26px;
+  width: 137px;
+  height: 132px;
+  background-size: contain;
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .background-design-faq1 {
@@ -256,13 +258,15 @@ body {
 .background-design-faq2 {
   background-image: url(../img/background/polygon-5.png);
   position: absolute;
-  inset: 0;
-  z-index: -1;
+  z-index: 1;
   background-position: center center;
   background-repeat: no-repeat;
   pointer-events: none;
-  top: -256px;
-  left: 1353px;
+  top: 209px;
+  right: 72px;
+  width: 67px;
+  height: 65px;
+  background-size: contain;
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .background-design-faq2 {
@@ -278,13 +282,15 @@ body {
 .background-design-faq3 {
   background-image: url(../img/background/polygon-6.png);
   position: absolute;
-  inset: 0;
-  z-index: -1;
+  z-index: 99999;
   background-position: center center;
   background-repeat: no-repeat;
   pointer-events: none;
-  top: -450px;
-  left: 1042px;
+  top: 30px;
+  right: 134px;
+  width: 205px;
+  height: 182px;
+  background-size: contain;
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .background-design-faq3 {
@@ -836,6 +842,14 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .event__detail-access {
+    margin-left: 39px;
+    margin-right: 10px;
+    grid-column: 2/span 4;
+    grid-row: 1;
+  }
+}
 @media screen and (max-width: 480px) {
   .event__detail-access {
     margin-left: 3px;
@@ -845,6 +859,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .event__detail-map {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+  }
+}
 @media screen and (max-width: 480px) {
   .event__detail-map {
     display: grid;
@@ -919,6 +939,18 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .event__map {
+    margin-top: 22px;
+    margin-left: 0;
+    width: 80%;
+    height: 200px;
+    grid-column: 1/span 2;
+    grid-row: 2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (max-width: 480px) {
   .event__map {
     margin-top: 22px;
@@ -958,6 +990,11 @@ body {
   margin-top: 60px;
   gap: 90px;
 }
+@media screen and (max-width: 768px) {
+  .contents__info {
+    display: block;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .contents__info {
     gap: 35px;
@@ -981,10 +1018,17 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+@media screen and (max-width: 768px) {
+  .contents__card {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .contents__card {
     min-width: 220px;
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }
@@ -1120,6 +1164,7 @@ body {
   .content__img {
     min-width: 200px;
     height: auto;
+    padding: 5px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1376,7 +1421,7 @@ body {
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .about-exhibitors__company-list {
     gap: 0 30px;
-    margin: 0 15px 0;
+    margin: 0 30px 0;
     padding-top: 50px;
   }
 }
@@ -1396,7 +1441,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .about-exhibitors__company {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1460,10 +1505,16 @@ body {
   gap: 24px 30px;
   padding-bottom: 185px;
 }
+@media screen and (max-width: 768px) {
+  .time-schedule__lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .time-schedule__lists {
     padding-top: 30px;
-    gap: 14px 8px;
+    gap: 20px 25px;
     padding-bottom: 40px;
     margin: 0 12px 0;
     place-items: center;
@@ -1497,7 +1548,6 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .time-schedule__card {
-    max-width: 250px;
     width: 100%;
     height: 100%;
   }
@@ -1640,7 +1690,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--1 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -1684,7 +1734,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--2 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -1738,7 +1788,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--3 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -1791,7 +1841,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--4 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -1842,7 +1892,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--5 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -1891,7 +1941,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--6 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -1941,7 +1991,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--7 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -1991,7 +2041,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--8 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -2041,7 +2091,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--9 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -2096,7 +2146,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--10 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -2145,7 +2195,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .card--11 p {
-    padding: 3px;
+    padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
@@ -2195,6 +2245,7 @@ body {
   padding-top: 80px;
   padding-bottom: 108px;
   position: relative;
+  overflow: visible;
 }
 @media screen and (max-width: 480px) {
   .faq {

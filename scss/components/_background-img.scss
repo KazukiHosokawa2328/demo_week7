@@ -53,13 +53,15 @@
 .background-design-faq1 {
   background-image: url(../img/background/polygon-4.png);
   position: absolute;
-  inset: 0;
-  z-index: -1;
+  z-index: 1;
   background-position: center center;
   background-repeat: no-repeat;
   pointer-events: none;
-  top: 99px;
-  left: -1367px;
+  top: 350px;
+  left: -26px;
+  width: 137px;
+  height: 132px;
+  background-size: contain;
 
   @include mq(tab) {
     height: auto;
@@ -72,13 +74,15 @@
 .background-design-faq2 {
   background-image: url(../img/background/polygon-5.png);
   position: absolute;
-  inset: 0;
-  z-index: -1;
+  z-index: 1;
   background-position: center center;
   background-repeat: no-repeat;
   pointer-events: none;
-  top: -256px;
-  left: 1353px;
+  top: 209px;
+  right: 72px;
+  width: 67px;
+  height: 65px;
+  background-size: contain;
 
   @include mq(tab) {
     height: auto;
@@ -92,13 +96,15 @@
 .background-design-faq3 {
   background-image: url(../img/background/polygon-6.png);
   position: absolute;
-  inset: 0;
-  z-index: -1;
+  z-index: 99999;
   background-position: center center;
   background-repeat: no-repeat;
   pointer-events: none;
-  top: -450px;
-  left: 1042px;
+  top: 30px;
+  right: 134px;
+  width: 205px;
+  height: 182px;
+  background-size: contain;
 
   @include mq(tab) {
     height: auto;

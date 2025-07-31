@@ -22,6 +22,10 @@
   margin-top: 60px;
   gap: 90px;
 
+  @include mq(mid) {
+    display: block;
+  }
+
   @include mq(tab) {
     gap: 35px;
     margin: 40px 15px 0;
@@ -42,9 +46,15 @@
   padding-bottom: 20px;
   box-sizing: border-box;
 
+  @include mq(mid) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include mq(tab) {
     min-width: 220px;
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
@@ -169,6 +179,7 @@
   @include mq(tab) {
     min-width: 200px;
     height: auto;
+    padding: 5px;
   }
 
   @include mq(sp) {
