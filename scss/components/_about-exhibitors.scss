@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.title--exhibitors {
+  margin-bottom: 20px;
+}
+
 .title-ja--exhibitors {
   span {
     margin-right: 39px;
@@ -18,7 +22,7 @@
 .about-exhibitors__company-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 91px;
+  padding-top: 94px;
   gap: 0 88px;
 
   @include mq(tab) {
@@ -58,7 +62,7 @@
   font-weight: 500;
   line-height: 2;
   padding-top: 20px;
-  padding-bottom: 67px;
+  padding-bottom: 64px;
 
   @include mq(tab) {
     font-size: 1rem;

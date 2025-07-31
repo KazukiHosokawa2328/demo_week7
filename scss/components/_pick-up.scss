@@ -23,6 +23,10 @@
   }
 }
 
+.title--pick-up {
+  margin-bottom: 20px;
+}
+
 .pick-up__inner {
   @include mq(sp) {
     max-width: 340px;
@@ -61,7 +65,7 @@
 }
 
 .company--OPLAN {
-  margin-top: 57px;
+  margin-top: 11px;
   margin-left: 79px;
   width: 110px;
   @include mq(sp) {
@@ -70,7 +74,7 @@
   }
 }
 .company-info--OPLAN {
-  margin-top: 34px;
+  margin-top: 19px;
   padding-left: 111px;
 
   @include mq(sp) {
@@ -82,8 +86,15 @@
     line-height: 1.5;
   }
 }
+
+.OPLAN--link {
+  text-decoration: underline;
+  text-decoration-color: #ffebe2;
+  text-decoration-thickness: 2px;
+}
+
 .company--PEBANK {
-  margin-top: 53px;
+  margin-top: 26px;
   margin-left: 9px;
 
   @include mq(sp) {
@@ -92,7 +103,7 @@
   }
 }
 .company-info--PEBANK {
-  margin-top: 48px;
+  margin-top: 26px;
   margin-left: 39px;
   @include mq(sp) {
     width: 100%;
@@ -117,7 +128,7 @@
   }
 }
 .company--creava {
-  margin-top: 17px;
+  margin-top: 7px;
   margin-left: 8px;
   @include mq(sp) {
     margin: 16px auto 0;
@@ -135,6 +146,7 @@
   img {
     width: 95px;
     height: 21px;
+    margin-bottom: 10px;
 
     @include mq(sp) {
       display: none;
@@ -151,8 +163,9 @@
     }
   }
 }
+
 .company--quartet {
-  margin-top: 40px;
+  margin-top: 33px;
   margin-left: 16px;
   @include mq(sp) {
     margin: 25px auto 0;
@@ -160,7 +173,7 @@
   }
 }
 .company-info--quartet {
-  margin-top: 31px;
+  margin-top: 25px;
   margin-left: 31px;
   @include mq(sp) {
     width: 100%;

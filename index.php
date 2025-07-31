@@ -193,10 +193,10 @@ include './inc/head.php';
     <section class="pick-up">
       <div class="section__inner pick-up__inner">
         <h2 class="section__title">
-          <span class="section__title-en section__title-en--orange"
+          <span class="section__title-en section__title-en--orange title--pick-up"
             >Pick Up</span
           >
-          <div class="section__title-ja"><span>注目の企業</span></div>
+          <div class="section__title-ja title--pick-up"><span>注目の企業</span></div>
         </h2>
         <div class="pick-up__info">
           <div class="pick-up__company company--OPLAN">
@@ -210,6 +210,7 @@ include './inc/head.php';
           </div>
           <p class="pick-up__company-info company-info--OPLAN">
             オープラン株式会社は「ITサービス」を軸に「人」と「グローバル」に向き合い日本を代表する企業になるべく2015年に産声をあげたベンチャー企業です。<br />
+            <a href="https://oplan.co.jp/" target="_blank" class="OPLAN--link">https://oplan.co.jp/</a>
           </p>
         </div>
         <div class="pick-up__info">
@@ -251,9 +252,9 @@ include './inc/head.php';
             月額制システム開発チームレンタル<a href="https://sucsak.com/"
               >SucSak(サクサク)</a
             >を運営している東京新宿のシステム開発会社です。<br />
-            <a href="https://sucsak.com/"
+            <a href="https://sucsak.com/" 
               ><img src="./img/Pickuop-logo-creava.png" alt=""
-            /></a>
+            /><span class="creava--link">：https://sucsak.com/</span></a>
           </p>
         </div>
         <div class="pick-up__info">
@@ -275,7 +276,7 @@ include './inc/head.php';
       <div class="background-design-exhibitors"></div>
       <div class="section__inner">
         <h2 class="section__title">
-          <span class="section__title-en">About Exhibitors</span>
+          <span class="section__title-en title--exhibitors">About Exhibitors</span>
           <div class="section__title-ja title-ja--exhibitors">
             <span>出展企業一覧</span>
           </div>
@@ -476,7 +477,7 @@ include './inc/head.php';
       <div class="section__inner faq__inner-sp">
         <h2 class="section__title">
           <span
-            class="section__title-en section__title-en--orange section-title--faq"
+            class="section__title-en section__title-en--orange title--faq"
             >FAQ</span
           >
           <div class="section__title-ja"><span>よくある質問</span></div>

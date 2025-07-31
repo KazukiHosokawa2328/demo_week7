@@ -250,7 +250,6 @@
   padding-left: 5px;
 
   .time-schedule__card-time {
-    left: -7px;
     @include mq(sp) {
       left: -7px;
     }
@@ -408,7 +407,6 @@
   padding-left: 5px;
 
   .time-schedule__card-time {
-    left: -11px;
     @include mq(sp) {
       left: -6px;
     }
@@ -461,7 +459,6 @@
 
 .card--7 {
   .time-schedule__card-time {
-    left: -2px;
     @include mq(sp) {
       left: -7px;
     }
@@ -520,7 +517,6 @@
 
 .card--8 {
   .time-schedule__card-time {
-    left: -5px;
     @include mq(sp) {
       left: -7px;
     }
@@ -575,7 +571,6 @@
 
 .card--9 {
   .time-schedule__card-time {
-    left: -12px;
     @include mq(sp) {
       left: -7px;
     }
@@ -638,8 +633,6 @@
   }
 
   .time-schedule__card-time {
-    left: -1px;
-
     @include mq(sp) {
       left: -7px;
     }
@@ -696,7 +689,6 @@
   // margin-left: 4px;
 
   .time-schedule__card-time {
-    left: -6px;
   }
 
   span {
@@ -751,7 +743,6 @@
   // margin-left: 4px;
 
   .time-schedule__card-time {
-    left: -6px;
   }
 
   img[src="./img/card-12.png"] {
