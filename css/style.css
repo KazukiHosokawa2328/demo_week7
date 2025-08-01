@@ -1659,7 +1659,7 @@ body {
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .time-schedule__card-time {
     width: 66px;
-    height: 25px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 480px) {
