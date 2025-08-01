@@ -412,7 +412,7 @@ body {
     position: fixed;
     z-index: 999;
     bottom: 0;
-    background: pink;
+    background: rgba(241, 241, 244, 0.5);
     max-width: 100%;
     width: 100vw;
     padding: 40px;
