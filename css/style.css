@@ -87,9 +87,15 @@ textarea {
 body {
   font-family: "Noto sans JP", sans-serif;
   position: relative;
-  width: 100vw;
-  max-width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
 }
 
 /*---------------------
@@ -408,7 +414,15 @@ body {
 }
 @media screen and (max-width: 480px) {
   .window-button__wrapper {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     position: fixed;
     z-index: 999;
     bottom: 0;
@@ -445,7 +459,7 @@ body {
     width: 95vw;
     padding: 8px 45px 9px 5px;
     color: #fff;
-    font-size: 19.6px;
+    font-size: 1.2rem;
     font-weight: 500;
     border-radius: 49px;
     border: 1.633px solid #fff;
@@ -1002,9 +1016,11 @@ body {
   }
 }
 
-.contents__inner {
-  margin-left: 10px;
-  margin-right: 10px;
+@media screen and (max-width: 480px) {
+  .contents__inner {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .contents__info {
@@ -1311,7 +1327,7 @@ body {
   .company-info--OPLAN {
     width: 100%;
     margin: 14px auto 0;
-    padding: 0;
+    padding: 0 10px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
@@ -1344,6 +1360,7 @@ body {
     width: 100%;
     margin: 12px auto 0;
     text-align: center;
+    padding: 0 10px;
   }
 }
 
@@ -1366,6 +1383,7 @@ body {
   .company-info--BOC {
     width: 100%;
     margin: 12px auto 0;
+    padding: 0 10px;
   }
 }
 
@@ -1388,6 +1406,7 @@ body {
   .company-info--creava {
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
   }
 }
 .company-info--creava img {

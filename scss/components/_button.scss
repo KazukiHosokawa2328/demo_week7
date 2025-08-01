@@ -69,7 +69,9 @@
 .window-button__wrapper {
   display: none;
   @include mq(sp) {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     position: fixed;
     z-index: 999;
     bottom: 0;
@@ -103,7 +105,7 @@
     width: 95vw;
     padding: 8px 45px 9px 5px;
     color: #fff;
-    font-size: 19.6px;
+    font-size: 1.2rem;
     font-weight: 500;
     border-radius: 49px;
     border: 1.633px solid #fff;

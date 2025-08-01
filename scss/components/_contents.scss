@@ -17,8 +17,10 @@
 }
 
 .contents__inner {
-  margin-left: 10px;
-  margin-right: 10px;
+  @include mq(sp) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .contents__info {

@@ -3,9 +3,15 @@
 body {
   font-family: "Noto sans JP", sans-serif;
   position: relative;
-  width: 100vw;
-  max-width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: auto;
+}
+
+html,
+body {
+  @include mq(sp) {
+    overflow-x: hidden !important;
+  }
 }
 
 /*---------------------

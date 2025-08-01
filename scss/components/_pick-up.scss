@@ -80,7 +80,7 @@
   @include mq(sp) {
     width: 100%;
     margin: 14px auto 0;
-    padding: 0;
+    padding: 0 10px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
@@ -109,6 +109,7 @@
     width: 100%;
     margin: 12px auto 0;
     text-align: center;
+    padding: 0 10px;
   }
 }
 .company--BOC {
@@ -125,6 +126,7 @@
   @include mq(sp) {
     width: 100%;
     margin: 12px auto 0;
+    padding: 0 10px;
   }
 }
 .company--creava {
@@ -141,6 +143,7 @@
   @include mq(sp) {
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   img {
