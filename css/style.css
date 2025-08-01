@@ -87,6 +87,9 @@ textarea {
 body {
   font-family: "Noto sans JP", sans-serif;
   position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /*---------------------
@@ -100,7 +103,6 @@ body {
 @media screen and (max-width: 480px) {
   .section__inner {
     max-width: 370px;
-    width: 100%;
   }
 }
 
@@ -410,9 +412,20 @@ body {
     position: fixed;
     z-index: 999;
     bottom: 0;
-    background: rgba(241, 241, 244, 0.5);
+    background: pink;
+    max-width: 100%;
+    width: 100vw;
+    padding: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper--sp {
+    display: block;
     width: 100%;
-    height: 80px;
+    height: 100%;
   }
 }
 
@@ -425,8 +438,11 @@ body {
     position: fixed;
     z-index: 9999;
     bottom: 18px;
-    left: 23px;
-    width: 343px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    max-width: 343px;
+    width: 95vw;
     padding: 8px 45px 9px 5px;
     color: #fff;
     font-size: 19.6px;
@@ -434,6 +450,9 @@ body {
     border-radius: 49px;
     border: 1.633px solid #fff;
     background: #06c755;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .window-button--sp img {
     position: absolute;
@@ -698,7 +717,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .event__inner-sp {
-    width: 350px;
+    max-width: 350px;
   }
 }
 
@@ -742,6 +761,8 @@ body {
   .event__info {
     padding-bottom: 2px;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -954,8 +975,9 @@ body {
 @media screen and (max-width: 480px) {
   .event__map {
     margin-top: 22px;
-    margin-left: 0;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
     height: 200px;
     grid-column: 1/span 2;
     grid-row: 2;
@@ -978,6 +1000,11 @@ body {
   .contents {
     padding-top: 40px;
   }
+}
+
+.contents__inner {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .contents__info {
@@ -1006,6 +1033,9 @@ body {
     display: block;
     margin-top: 26px;
     padding-bottom: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
@@ -1035,8 +1065,9 @@ body {
 @media screen and (max-width: 480px) {
   .contents__card {
     margin: 0 auto;
-    width: 336px;
+    max-width: 336px;
     padding-bottom: 17px;
+    width: 100%;
   }
   .contents__card:first-child {
     margin-bottom: 28px;
@@ -1555,7 +1586,7 @@ body {
 @media screen and (max-width: 480px) {
   .time-schedule__card {
     max-width: 354px;
-    width: 100%;
+    width: 98%;
     height: 103px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1568,6 +1599,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .time-schedule__card:nth-child(n+4) {
     display: none;

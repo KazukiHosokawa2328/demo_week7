@@ -118,7 +118,7 @@ include './inc/head.php';
     </section>
 
     <section class="contents">
-      <div class="section__inner">
+      <div class="section__inner contents__inner">
         <h2 class="section__title">
           <span class="section__title-en section__title-en--orange"
             >Contents</span
@@ -504,13 +504,15 @@ include './inc/head.php';
       申し込みはこちら<img src="./img/line-brand-icon-1.png" alt="" />
     </button>
     <div class="window-button__wrapper">
-      <button class="window-button--sp">
-        事前申し込みはこちら(無料)<img
-          src="./img/line-brand-icon-1.png"
-          alt=""
-        />
-      </button>
+        <button class="window-button--sp">
+          事前申し込みはこちら(無料)<img
+            src="./img/line-brand-icon-1.png"
+            alt=""
+          />
+        </button>
     </div>
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="./js/style.js"></script>
