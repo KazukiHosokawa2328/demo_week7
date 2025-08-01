@@ -22,6 +22,9 @@
   @include mq(sp) {
     max-width: 350px;
   }
+  @include mq(sml) {
+    margin: 0 10px;
+  }
 }
 
 .event__title-ja {

@@ -1,6 +1,7 @@
 @use "sass:map";
 
 $breakpoints: (
+  sml: "screen and (max-width: 375px)",
   sp: "screen and (max-width: 480px)",
   mid: "screen and (max-width: 768px)",
   tab: "screen and (min-width: 481px) and (max-width: 1024px)",

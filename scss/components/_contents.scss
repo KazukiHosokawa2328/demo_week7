@@ -18,6 +18,10 @@
 
 .contents__inner {
   @include mq(sp) {
+    margin: 0 auto;
+  }
+
+  @include mq(sml) {
     margin-left: 10px;
     margin-right: 10px;
   }
